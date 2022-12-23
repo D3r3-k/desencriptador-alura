@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <link rel="shortcut icon" href="images/logo-white.svg" type="image/x-icon">
+    <title>Desencriptador Alura</title>
+</head>
+
+<body>
+    <header class="logo">
+        <a href="/"><img src="images/logo.svg" alt="Logotipo Alura"></a>
+    </header>
+    <main>
+        <section class="encrypt-area">
+            <textarea id="message" cols="30" rows="10" placeholder="Ingrese el texto aqui."></textarea>
+            <div>
+                <div class="info-alert">
+                    <p id="alert"><i class="ri-information-fill"></i>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="buttons">
+                    <button class="encrypt" id="encrypt">Encriptar</button>
+                    <button class="decrypt" id="decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <aside class="encrypted">
+            <div class="box">
+                <div class="message-empy">
+                    <img src="images/doll.svg" alt="Muñeco">
+                    <h3>Ningún mensaje fue encontrado.</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="message-encrypt">
+                    <p id="show-message"></p>
+                    <button id="copy-message">Copiar</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img src="images/logo-white.svg" alt="Logotipo en el Footer">
+            <h3>Alura</h3>
+        </div>
+        <p>© Copyright - Desarrollado por Derek Orellana.</p>
+    </footer>
+</body>
+
+</html>
